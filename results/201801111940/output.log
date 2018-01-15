@@ -1,0 +1,8 @@
+2018-01-11 19:40:24 - root - run.py - run - INFO - ********TEST START********
+2018-01-11 19:40:24 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-11 19:40:25 - root - Log.py - build_case_line - INFO - 点名 - json:{'status': 200, 'text': '-1514058168'}
+2018-01-11 19:40:25 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-11 19:41:31 - root - Log.py - build_case_line - INFO - 文本信息下发 - json:{'status': 200, 'text': '-1514058136'}
+2018-01-11 19:41:31 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-11 19:41:32 - root - Log.py - build_case_line - INFO - 设备状态检测 - json:{'status': 200, 'text': '-1514058134'}
+2018-01-11 19:41:32 - root - run.py - run - INFO - *********TEST END*********

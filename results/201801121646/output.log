@@ -1,0 +1,24 @@
+2018-01-12 16:46:11 - root - run.py - run - INFO - ********TEST START********
+2018-01-12 16:46:13 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:46:13 - root - Log.py - build_case_line - INFO - 点名 - json:{'text': '-1514057946', 'status': 200}
+2018-01-12 16:46:14 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:47:20 - root - Log.py - build_case_line - INFO - 文本信息下发 - json:{'text': '-1514057944', 'status': 200}
+2018-01-12 16:47:20 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:48:27 - root - Log.py - build_case_line - INFO - 信息服务 - json:{'text': '-1514057942', 'status': 200}
+2018-01-12 16:48:28 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:48:29 - root - Log.py - build_case_line - INFO - 设备状态检测 - json:{'text': '-1514057940', 'status': 200}
+2018-01-12 16:48:29 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:48:29 - root - Log.py - build_case_line - INFO - 摄像头立即拍照命令 - json:{'text': '-1514057938', 'status': 200}
+2018-01-12 16:48:30 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:49:36 - root - Log.py - build_case_line - INFO - 电话回拨 - json:{'text': '-1514057916', 'status': 200}
+2018-01-12 16:49:36 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:49:37 - root - Log.py - build_case_line - INFO - 录音 - json:{'text': '-1514057914', 'status': 200}
+2018-01-12 16:49:38 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:50:43 - root - Log.py - build_case_line - INFO - 临时位置跟踪设置 - json:{'text': '-1514057912', 'status': 200}
+2018-01-12 16:50:44 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:51:49 - root - Log.py - build_case_line - INFO - 事件设置 - json:{'text': '-1514057910', 'status': 200}
+2018-01-12 16:51:50 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:52:39 - root - Log.py - build_case_line - INFO - 提问下发 - json:{'text': '-1514057908', 'status': 200}
+2018-01-12 16:52:40 - root - OracleOperation.py - ReConnect - INFO - Connect DB successfully!
+2018-01-12 16:53:46 - root - Log.py - build_case_line - INFO - 信息点播菜单设置 - json:{'text': '-1514057876', 'status': 200}
+2018-01-12 16:53:46 - root - run.py - run - INFO - *********TEST END*********
