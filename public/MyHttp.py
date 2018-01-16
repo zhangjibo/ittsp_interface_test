@@ -5,7 +5,7 @@ import requests
 from public import ReadConfig
 from public.Log import MyLog
 from public.OracleOperation import MyOracle
-# from public.GetData import get_cookie
+# from sePublic.GetData import get_cookie
 rc = ReadConfig.ReadConfig("808_config.ini")
 
 
