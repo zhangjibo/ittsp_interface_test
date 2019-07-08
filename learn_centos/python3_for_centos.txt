@@ -1,0 +1,83 @@
+Centos7下，安装Python3.6.5：
+
+Step1.安装相关依赖包。
+
+在终端下输入命令：sudoyum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+
+Step2.使用wget从官网下载安装包。
+
+在终端下输入命令：wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz
+
+Step3.解压安装包。
+1）新建文件夹名字为python3,在终端下输入命令：mkdir python3
+
+(2)将下载好的安装包解压至python3文件夹。
+
+在终端下输入命令：tar -xf Python-3.6.5.tar.xz -C python3
+
+Step4.编译安装。
+（1）进入 Python-3.6.5目录，在终端中输入命令：cd python3/Python-3.6.5
+
+（2）配置安装路径，在终端中输入命令：./configure --prefix=/home/python3
+
+(3)安装，在终端中输入命令：make
+
+之后，再输入命令：make install
+
+Step5.创建python3的软链接。
+
+（1）备份原文件为python2,在终端中输入命令：sudomv /usr/bin/python /usr/bin/python2
+
+(2)创建软链接，在终端中输入命令：sudo ln -s /home/python3/bin/python3 /usr/bin/python
+
+备份python2的pip为pip2,输入命令：sudo mv /usr/bin/pip /usr/bin/pip2
+
+为python3的pip创建软链接，输入命令：sudo ln -s /home/python3/bin/pip3 /usr/bin/pip
+
+Step6.python3.6测试
+
+在终端输入命令：python
+
+看到系统提示python3.6.5，证明此时我们已成功安装。
+
+
+值得注意：因为在Centos中，yum源使用的是Python2.7，替换为Python3以后，yum源无法正常工作。所以我们需要修改yum配置文件。
+
+首先，更改文件权限，在终端输入命令：sudo chmod 777 /usr/bin/yum
+
+在终端输入命令：vi /usr/bin/yum 将#!/usr/bin/python 改为#!/usr/bin/python2.7
+
+
+因为yum采用Python作为命令解释器，这可以从/usr/bin/yum文件中第一行#!/usr/bin/python发现。而python版本之间兼容性不太好，使得2.X版本与3.0版本之间存在语法不一致问题。而CentOS 7自带的yum采用的是python2.7，当系统将python升级到3.4后，出现语法解释错误。
+
+解决办法：
+
+一是升级yum。
+
+二是修改yum的解释器为旧版本python2.7，即将连接文件/usr/bin/python连接回/usr/bin/python2.7。治标不治本，不推荐。
+
+三是在设置里更改解释器设置，即修改/usr/bin/yum文件，指定使用python2.7作为yum的解释器：
+
+1
+# vi /usr/bin/yum
+将第一行"#!/usr/bin/python" 改为 "#!/usr/bin/python2.7"即可。
+
+ 
+
+安装软件时又会出现另一种报错
+
+1
+2
+3
+4
+5
+Downloading packages:
+  File "/usr/libexec/urlgrabber-ext-down", line 28
+    except OSError, e:
+                  ^
+SyntaxError: invalid syntax
+问题与前面一个一样，因此解决办法也是一样的：
+
+1
+# vi /usr/libexec/urlgrabber-ext-down
+将第一行"#!/usr/bin/python" 改为 "#!/usr/bin/python2.7"即可。
