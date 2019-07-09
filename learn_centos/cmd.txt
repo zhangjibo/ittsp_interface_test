@@ -1,0 +1,32 @@
+[root@centos7 ~]# echo file{1,2,3}.{txt,log}
+file1.txt file1.log file2.txt file2.log file3.txt file3.log
+#
+[root@centos7 learn_centos]# echo {a..z}
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+#
+[root@centos7 ~]# cal 09 1752
+   September 1752   
+Su Mo Tu We Th Fr Sa
+       1  2 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28 29 30
+#
+[root@centos7 ~]# man -k passwd
+chpasswd (8)         - update passwords in batch mode
+fgetpwent_r (3)      - get passwd file entry reentrantly
+getpwent_r (3)       - get passwd file entry reentrantly
+gpasswd (1)          - administer /etc/group and /etc/gshadow
+grub2-mkpasswd-pbkdf2 (1) - Generate a PBKDF2 password hash.
+lpasswd (1)          - Change group or user password
+lppasswd (1)         - add, change, or delete digest passwords.
+pam_localuser (8)    - require users to be listed in /etc/passwd
+passwd (1)           - update user's authentication tokens
+sslpasswd (1ssl)     - compute password hashes
+passwd (5)           - password file
+passwd2des (3)       - RFS password encryption
+pwhistory_helper (8) - Helper binary that transfers password hashes from passwd or shadow to opasswd
+saslpasswd2 (8)      - set a user's sasl password
+smbpasswd (5)        - The Samba encrypted password file
+vncpasswd (1)        - change the VNC password
+#
+
